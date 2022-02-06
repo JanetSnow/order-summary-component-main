@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:350px;
+    width:370px;
     border-radius: 15px;
     background-color: white;
 }
@@ -30,7 +30,7 @@ body {
 /* card-header */
 
 .hero {
-  width:350px;
+  width: 370px;
   height:165px;
   border-top-left-radius:15px;
   border-top-right-radius:15px;
@@ -44,7 +44,7 @@ body {
 h1 {
   font-size: 22px;
   padding-top: 15px;
-  font-weight: 900;
+  font-weight: 700;
   color:hsl(223, 47%, 23%);
 }
 
@@ -52,7 +52,7 @@ p {
   color: hsl(224, 23%, 55%);
   line-height: 24px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* content of subscription */
@@ -87,16 +87,16 @@ p {
 h2 {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .price {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 a {
   color:hsl(245, 75%, 52%);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 13px;
 }
 
@@ -107,6 +107,7 @@ a:hover {
 }
 
 /* button */
+
 .pay {
   width:300px;
   padding: 16px 32px;
@@ -114,7 +115,7 @@ a:hover {
   border-radius: 8px;
   color:white;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   border: none;
   margin-top: 20px;
   margin-bottom: 5px;
@@ -130,17 +131,46 @@ a:hover {
   border-radius: 8px;
   color:hsl(224, 23%, 55%);
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
   border:none;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .cancel:hover {
   color:hsl(223, 47%, 23%);
   cursor: pointer;
 }
 
+/* mobile */
 @media (max-width:450px) {
   body {
     background-image:  url('../images/pattern-background-mobile.svg');
+  }
+  .card {
+      width:350px;
+  }
+  .hero {
+    width:350px;
+  }
+  h1 {
+    font-weight: 900;
+  }
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 15px;
+  }
+  a {
+    font-weight: 700;
+  }
+  .pay {
+    font-size: 15px;
+  }
+  .cancel {
+    font-size: 15px;
+    margin-bottom: 15px;
   }
 }
